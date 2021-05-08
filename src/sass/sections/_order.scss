@@ -1,0 +1,135 @@
+.order {
+    position: relative;
+    &:before {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 0;
+        width: 35.5%;
+        height: 528px;
+        background: rgb(245, 245, 245);
+    }
+    &__wrapper-main {
+        margin-left: 80px;
+        padding-left: 308px;
+        padding-right: 80px;
+        padding-bottom: 75px;
+        padding-top: 100px;
+        background: rgb(58, 62, 64);
+        position: relative;
+        &:before {
+            position: absolute;
+            left: 0;
+            top: 137px;
+            content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjM4IiBoZWlnaHQ9IjcwNiIgdmlld0JveD0iMCAwIDIzOCA3MDYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQo8Y2lyY2xlIG9wYWNpdHk9IjAuMiIgY3g9IjIuNSIgY3k9IjY3My41IiByPSIyIiBmaWxsPSIjRjVGNUY1IiBzdHJva2U9IiNGNUY1RjUiLz4NCjxjaXJjbGUgb3BhY2l0eT0iMC4yIiBjeD0iMi41IiBjeT0iNzAzLjUiIHI9IjIiIHN0cm9rZT0iI0Y1RjVGNSIvPg0KPGNpcmNsZSBvcGFjaXR5PSIwLjIiIGN4PSIzMi41IiBjeT0iNjEzLjUiIHI9IjIiIGZpbGw9IiNGNUY1RjUiIHN0cm9rZT0iI0Y1RjVGNSIvPg0KPGNpcmNsZSBvcGFjaXR5PSIwLjIiIGN4PSIzMi41IiBjeT0iNjQzLjUiIHI9IjIiIHN0cm9rZT0iI0Y1RjVGNSIvPg0KPGNpcmNsZSBvcGFjaXR5PSIwLjIiIGN4PSIzMi41IiBjeT0iNjczLjUiIHI9IjIiIGZpbGw9IiNGNUY1RjUiIHN0cm9rZT0iI0Y1RjVGNSIvPg0KPGNpcmNsZSBvcGFjaXR5PSIwLjIiIGN4PSIzMi41IiBjeT0iNzAzLjUiIHI9IjIiIGZpbGw9IiNGNUY1RjUiIHN0cm9rZT0iI0Y1RjVGNSIvPg0KPGNpcmNsZSBvcGFjaXR5PSIwLjIiIGN4PSIxMjIuNSIgY3k9IjU4My41IiByPSIyIiBmaWxsPSIjRjVGNUY1IiBzdHJva2U9IiNGNUY1RjUiLz4NCjxjaXJjbGUgb3BhY2l0eT0iMC4yIiBjeD0iMTIyLjUiIGN5PSI2MTMuNSIgcj0iMiIgc3Ryb2tlPSIjRjVGNUY1Ii8+DQo8Y2lyY2xlIG9wYWNpdHk9IjAuMiIgY3g9IjEyMi41IiBjeT0iNjQzLjUiIHI9IjIiIGZpbGw9IiNGNUY1RjUiIHN0cm9rZT0iI0Y1RjVGNSIvPg0KPGNpcmNsZSBvcGFjaXR5PSIwLjIiIGN4PSIxMjIuNSIgY3k9IjY3My41IiByPSIyIiBmaWxsPSIjRjVGNUY1IiBzdHJva2U9IiNGNUY1RjUiLz4NCjxjaXJjbGUgb3BhY2l0eT0iMC4yIiBjeD0iMTUyLjUiIGN5PSI1ODMuNSIgcj0iMiIgZmlsbD0iI0Y1RjVGNSIgc3Ryb2tlPSIjRjVGNUY1Ii8+DQo8Y2lyY2xlIG9wYWNpdHk9IjAuMiIgY3g9IjE1Mi41IiBjeT0iNjEzLjUiIHI9IjIiIGZpbGw9IiNGNUY1RjUiIHN0cm9rZT0iI0Y1RjVGNSIvPg0KPGNpcmNsZSBvcGFjaXR5PSIwLjIiIGN4PSIxNTIuNSIgY3k9IjY0My41IiByPSIyIiBzdHJva2U9IiNGNUY1RjUiLz4NCjxjaXJjbGUgb3BhY2l0eT0iMC4yIiBjeD0iMTUyLjUiIGN5PSI2NzMuNSIgcj0iMiIgZmlsbD0iI0Y1RjVGNSIgc3Ryb2tlPSIjRjVGNUY1Ii8+DQo8Y2lyY2xlIG9wYWNpdHk9IjAuMiIgY3g9Ijg1LjUiIGN5PSI5Mi41IiByPSIyIiBmaWxsPSIjRjVGNUY1IiBzdHJva2U9IiNGNUY1RjUiLz4NCjxjaXJjbGUgb3BhY2l0eT0iMC4yIiBjeD0iODUuNSIgY3k9IjEyMi41IiByPSIyIiBzdHJva2U9IiNGNUY1RjUiLz4NCjxjaXJjbGUgb3BhY2l0eT0iMC4yIiBjeD0iMTE1LjUiIGN5PSIzMi41IiByPSIyIiBmaWxsPSIjRjVGNUY1IiBzdHJva2U9IiNGNUY1RjUiLz4NCjxjaXJjbGUgb3BhY2l0eT0iMC4yIiBjeD0iMTE1LjUiIGN5PSI2Mi41IiByPSIyIiBzdHJva2U9IiNGNUY1RjUiLz4NCjxjaXJjbGUgb3BhY2l0eT0iMC4yIiBjeD0iMTE1LjUiIGN5PSI5Mi41IiByPSIyIiBmaWxsPSIjRjVGNUY1IiBzdHJva2U9IiNGNUY1RjUiLz4NCjxjaXJjbGUgb3BhY2l0eT0iMC4yIiBjeD0iMTE1LjUiIGN5PSIxMjIuNSIgcj0iMiIgZmlsbD0iI0Y1RjVGNSIgc3Ryb2tlPSIjRjVGNUY1Ii8+DQo8Y2lyY2xlIG9wYWNpdHk9IjAuMiIgY3g9IjIwNS41IiBjeT0iMi41IiByPSIyIiBmaWxsPSIjRjVGNUY1IiBzdHJva2U9IiNGNUY1RjUiLz4NCjxjaXJjbGUgb3BhY2l0eT0iMC4yIiBjeD0iMjA1LjUiIGN5PSIzMi41IiByPSIyIiBzdHJva2U9IiNGNUY1RjUiLz4NCjxjaXJjbGUgb3BhY2l0eT0iMC4yIiBjeD0iMjA1LjUiIGN5PSI2Mi41IiByPSIyIiBmaWxsPSIjRjVGNUY1IiBzdHJva2U9IiNGNUY1RjUiLz4NCjxjaXJjbGUgb3BhY2l0eT0iMC4yIiBjeD0iMjA1LjUiIGN5PSI5Mi41IiByPSIyIiBmaWxsPSIjRjVGNUY1IiBzdHJva2U9IiNGNUY1RjUiLz4NCjxjaXJjbGUgb3BhY2l0eT0iMC4yIiBjeD0iMjM1LjUiIGN5PSIyLjUiIHI9IjIiIGZpbGw9IiNGNUY1RjUiIHN0cm9rZT0iI0Y1RjVGNSIvPg0KPGNpcmNsZSBvcGFjaXR5PSIwLjIiIGN4PSIyMzUuNSIgY3k9IjMyLjUiIHI9IjIiIGZpbGw9IiNGNUY1RjUiIHN0cm9rZT0iI0Y1RjVGNSIvPg0KPGNpcmNsZSBvcGFjaXR5PSIwLjIiIGN4PSIyMzUuNSIgY3k9IjYyLjUiIHI9IjIiIHN0cm9rZT0iI0Y1RjVGNSIvPg0KPGNpcmNsZSBvcGFjaXR5PSIwLjIiIGN4PSIyMzUuNSIgY3k9IjkyLjUiIHI9IjIiIGZpbGw9IiNGNUY1RjUiIHN0cm9rZT0iI0Y1RjVGNSIvPg0KPC9zdmc+DQo=);
+        }
+        &:after {
+            position: absolute;
+            content: '';
+            bottom: -90px;
+            left: 130px;
+            width: 0;
+            height: 200px;
+            border: 1px solid rgb(228, 40, 47);
+            border-radius: 2px;
+        }
+    }
+    &__text {
+        font-size: 22px;
+        line-height: 34px;
+        color: rgb(255, 255, 255);
+        max-width: 550px;
+        &-title {
+            max-width: 1050px;
+        }
+    }
+    &__box {
+        margin-top: 40px;
+        border: 20px solid rgb(72, 77, 80);
+        max-width: 557px;
+        min-height: 430px;
+        padding: 60px 75px 70px;
+        background: rgba(28, 34, 36, .7);
+        &-title {
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 34px;
+            color: rgb(255, 255, 255);
+        }
+        &-text {
+            margin-top: 15px;
+            font-size: 16px;
+            line-height: 24px;
+            color: rgb(255, 255, 255);
+        }
+        &-btn {
+            margin-top: 30px;
+        }
+    }
+    &__wrapper-absolute {
+        display: flex;
+        margin-top: 20px;
+    }
+    &__wrapper-photo {
+        position: relative;
+        margin-left: 30px;
+    }
+    &__photo {
+        position: absolute;
+        width: 865px;
+        height: 750px;
+        &:before {
+            position: absolute;
+            content: '';
+            top: -125px;
+            right: 245px;
+            width: 0;
+            height: 200px;
+            border: 1px solid rgb(228, 40, 47);
+            border-radius: 2px;
+            z-index: 1;
+        }
+        &:after {
+            position: absolute;
+            content: '';
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 165px;
+            background: rgba(28, 34, 36, .7);
+            z-index: 1;
+        }
+        &-link {
+            width: 865px;
+            height: 750px;
+            position: relative;
+        }
+        &-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &-arrow {
+            width: 70px;
+            height: 70px;
+            background: rgb(58, 62, 64);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            cursor: pointer;
+            z-index: 1;
+            &:hover {
+                background: rgb(245, 245, 245);
+            }
+            &_left {
+                bottom: 0;
+                left: 0;
+            }
+            &_right {
+                bottom: 0;
+                left: 70px;
+            }
+        }
+    }
+}

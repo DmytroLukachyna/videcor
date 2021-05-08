@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;600;700;800&family=Playfair+Display:wght@900&display=swap');
+* {
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 400;
+    transition: all .15s ease;
+    &::selection {
+        background: transparent;
+        color: rgb(228, 40, 47);
+    }
+}
