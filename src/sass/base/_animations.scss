@@ -1,0 +1,54 @@
+@keyframes videopulse-outer {
+    from {
+        width: 60px;
+        height: 60px;
+    }
+    to {
+        height: 45px;
+        width: 45px;
+    }
+}
+
+@keyframes videopulse-inner {
+    from {
+        width: 36px;
+        height: 36px;
+    }
+    to {
+        height: 27px;
+        width: 27px;
+    }
+}
+
+@keyframes promovideo-outer {
+    from {
+        width: 182px;
+        height: 182px;
+    }
+    to {
+        width: 147px;
+        height: 147px;
+    }
+}
+
+@keyframes promovideo-center {
+    from {
+        width: 130px;
+        height: 130px;
+    }
+    to {
+        height: 98px;
+        width: 98px;
+    }
+}
+
+@keyframes promovideo-inner {
+    from {
+        width: 78px;
+        height: 78px;
+    }
+    to {
+        height: 58px;
+        width: 58px;
+    }
+}

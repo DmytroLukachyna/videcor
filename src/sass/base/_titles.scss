@@ -1,0 +1,87 @@
+.title {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: rgb(28, 34, 36);
+    text-align: center;
+    margin-top: 5px;
+    &_special {
+        color: rgb(255, 255, 255);
+        text-align: left;
+        &-top {
+            font-size: 60px;
+            line-height: 74px;
+        }
+    }
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    position: relative;
+    color: rgb(228, 40, 47);
+    &:before {
+        position: absolute;
+        content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAyMiAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxsaW5lIHgxPSIxMC4zNjYiIHkxPSIxLjM2NjUxIiB4Mj0iMS4zNjYwMiIgeTI9IjE2Ljk1NSIgc3Ryb2tlPSIjRTQyODJGIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPg0KPGxpbmUgeDE9IjIwLjM2NiIgeTE9IjEuMzY2NTEiIHgyPSIxMS4zNjYiIHkyPSIxNi45NTUiIHN0cm9rZT0iI0U0MjgyRiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4NCjwvc3ZnPg0K);
+        left: 50%;
+        transform: translateX(-50%);
+        top: -25px;
+    }
+    &_special {
+        color: rgb(228, 40, 47);
+        text-align: left;
+        padding-left: 30px;
+        &:before {
+            top: 5px;
+            left: 0;
+            transform: unset;
+        }
+    }
+}
+
+.subtitle {
+    font-size: 22px;
+    line-height: 34px;
+    color: #1C2224;
+    margin-top: 5px;
+    &_special {
+        color: #F5F5F5;
+    }
+}
+
+.list {
+    font-size: 16px;
+    line-height: 24px;
+    color: #989EA2;
+    list-style-type: none;
+    padding-left: 50px;
+    max-width: 450px;
+    &__item {
+        position: relative;
+        margin-top: 15px;
+        &:before {
+            position: absolute;
+            content: '';
+            top: 10px;
+            left: -15px;
+            width: 5px;
+            height: 5px;
+            border: 1px solid #989EA2;
+            border-radius: 50%;
+        }
+    }
+}
+
+.sidenote {
+    position: absolute;
+    color: rgba(152, 158, 162, .1);
+    font-family: 'Playfair Display';
+    font-size: 200px;
+    font-weight: 900;
+    user-select: none;
+}
