@@ -1,48 +1,48 @@
 .btn {
-    background: rgb(228, 40, 47);
+  background: rgb(228, 40, 47);
+  border: 2px solid rgb(228, 40, 47);
+  height: 60px;
+  width: 264px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  &:hover {
     border: 2px solid rgb(228, 40, 47);
-    height: 60px;
-    width: 264px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 14px;
+    background: rgb(255, 255, 255);
+    color: rgb(228, 40, 47);
+  }
+  &::selection {
     color: rgb(255, 255, 255);
-    &:hover {
-        border: 2px solid rgb(228, 40, 47);
-        background: rgb(255, 255, 255);
-        color: rgb(228, 40, 47);
-    }
+  }
+  &_tabs {
+    background: rgb(245, 245, 245);
+    color: rgb(152, 158, 162);
+    border: 2px solid rgb(245, 245, 245);
     &::selection {
-        color: rgb(255, 255, 255);
+      color: rgb(228, 40, 47);
     }
-    &_tabs {
-        background: rgb(245, 245, 245);
-        color: rgb(152, 158, 162);
-        border: 2px solid rgb(245, 245, 245);
-        &::selection {
-            color: rgb(228, 40, 47);
-        }
-    }
+  }
 }
 
 .tabs {
-    &__item {
-        &_active {
-            .btn_tabs {
-                border: 2px solid rgb(228, 40, 47);
-                background: rgb(255, 255, 255);
-                color: rgb(228, 40, 47);
-                &:hover {
-                    background: rgb(228, 40, 47);
-                    border: 2px solid rgb(228, 40, 47);
-                    color: rgb(255, 255, 255);
-                }
-            }
+  &__item {
+    &_active {
+      .btn_tabs {
+        border: 2px solid rgb(228, 40, 47);
+        background: rgb(255, 255, 255);
+        color: rgb(228, 40, 47);
+        &:hover {
+          background: rgb(228, 40, 47);
+          border: 2px solid rgb(228, 40, 47);
+          color: rgb(255, 255, 255);
         }
+      }
     }
+  }
 }
