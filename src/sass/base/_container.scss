@@ -1,18 +1,17 @@
 .site-wrapper {
-    max-width: 1920px;
-    margin: 0 auto;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .container_narrow {
-    max-width: 1150px;
-    margin: 0 auto;
+  max-width: 1150px;
+  margin: 0 auto;
 }
 
 .container_wide {
-    max-width: 1760px;
-    margin: 0 auto;
+  max-width: 1760px;
+  margin: 0 auto;
 }
-
 
 /* .container_right {
     max-width: 1530px;
@@ -24,11 +23,11 @@
 } */
 
 .warning {
-    display: none;
+  display: none;
 }
 
 body,
 .fancybox-content,
 .slick-track {
-    transition: none;
+  transition: none;
 }

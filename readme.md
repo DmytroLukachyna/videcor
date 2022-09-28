@@ -1,1 +1,1 @@
-https://dmytrolukachyna.github.io/projects/videcor/
+https://dmytrolukachyna.pp.ua/projects/videcor/
