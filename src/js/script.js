@@ -1,5 +1,10 @@
+import $ from './jquery-global.js';
+import 'tabslet';
+import 'slick-carousel';
+import '@fancyapps/fancybox';
+
 $(document).ready(function () {
-  $('.tabs__wrapper').tabslet();
+  $('.tabs__wrapper').tabslet({ activeclass: 'tabs__item_active' });
   $('[data-fancybox]:not(.slick-cloned)').fancybox({
     /* touch: false, */
     keyboard: false,

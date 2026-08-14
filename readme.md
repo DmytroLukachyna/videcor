@@ -1,1 +1,1 @@
-https://dmytrolukachyna.pp.ua/projects/commercial/videcor/
+https://videcor.dmytrolukachyna.com/
