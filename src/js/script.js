@@ -14,31 +14,30 @@ $(document).ready(function () {
       '<div class="fancybox-error"><p>Приносим извинения, произошла ошибка. Мы уже работаем над ее исправлением!</p></div>',
     buttons: ['zoom', 'close'],
   });
-  $('.tabs__content-slider').slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false,
-    arrows: true,
-    dots: true,
-    prevArrow: $('.tabs__content-arrow_left'),
-    nextArrow: $('.tabs__content-arrow_right'),
-    accessibility: false,
-    focusOnSelect: false,
-    swipe: false,
-    appendDots: '.tabs__content-dots',
-    dotsClass: 'dot',
-  });
-  var total = $('.dot li');
-  $('.tabs__counter').text(`1/${total.length}`);
-  var $status = $('.tabs__counter');
-  var $slickElement = $('.tabs__content-slider');
-  $slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
-    if (!slick.$dots) {
-      return;
-    }
-    var i = (currentSlide ? currentSlide : 0) + 1;
-    $status.text(i + '/' + slick.$dots[0].children.length);
+  ['#tab-1', '#tab-2', '#tab-3'].forEach(function (tab) {
+    var $slider = $(tab + ' .tabs__content-slider');
+    $slider.on('init reInit afterChange', function (event, slick, currentSlide) {
+      if (!slick.$dots) {
+        return;
+      }
+      var i = (currentSlide ? currentSlide : 0) + 1;
+      $(tab + ' .tabs__counter').text(i + '/' + slick.$dots[0].children.length);
+    });
+    $slider.slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: false,
+      arrows: true,
+      dots: true,
+      prevArrow: $(tab + ' .tabs__content-arrow_left'),
+      nextArrow: $(tab + ' .tabs__content-arrow_right'),
+      accessibility: false,
+      focusOnSelect: false,
+      swipe: false,
+      appendDots: tab + ' .tabs__content-dots',
+      dotsClass: 'dot',
+    });
   });
   $('.tabs__gallery-slider').slick({
     infinite: true,
@@ -107,5 +106,13 @@ $(document).ready(function () {
   }, 40000);
   $('[data-src]').on('click', function () {
     clearTimeout(modalOnTimer);
+  });
+  $('.tabs__item').on('click', function () {
+    $('.tabs__content:visible')
+      .find('.tabs__content-slider, .tabs__gallery-slider')
+      .filter(function () {
+        return $(this).hasClass('slick-initialized') && !$(this).closest('.slick-cloned').length;
+      })
+      .slick('refresh');
   });
 });
